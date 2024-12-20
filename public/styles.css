@@ -1,0 +1,176 @@
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-footer-bg-color: #333;
+
+    --r-primary: #333333;
+    --r-border-radius: 0;
+    --r-border-color: #AFE1AF;
+    --r-font-family: 'Inter', sans-serif;
+}
+
+* {
+    font-family: var(--r-font-family), serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--r-primary);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header:not(.rebilly-instruments-error-card-header) {
+    background-color: transparent;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo a {
+    line-height: normal;
+}
+
+header .logo img {
+    width: 250px;
+}
+
+header .logo p {
+    margin: 0;
+    line-height: 1;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+}
+
+header section .header-button {
+    border: 1px solid #333;
+    padding: 8px 20px;
+    line-height: 1;
+    margin-left: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+section.deposit-wrapper {
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+footer {
+    background-color: var(--header-footer-bg-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+
+/* Debriefs */
+
+.debriefs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+
+    code {
+        background-color: #eee;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+}
+
+.debriefs-container video {
+    max-height: 600px;
+    width: auto;
+}
+
+.debriefs-container img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+}
+
+.debriefs-container.is-project small {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.debriefs-container.is-project,
+.debriefs-container.is-project * {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    color: var(--text-color);
+
+    li + li {
+        margin-top: 1.5rem;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.debrief-link {
+    color: var(--r-primary);
+    background-color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.debrief-link:hover {
+    background-color: var(--r-primary);
+    color: white;
+}

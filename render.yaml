@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: gamble-garden
+    env: node
+    buildCommand: yarn install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18.0.0
+      - key: VITE_API_KEY
+        sync: false

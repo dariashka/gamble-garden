@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Gamble Garden Casino - Project 20 Debrief</title>
+</head>
+
+<body>
+<header style="padding: 0;">
+    <section style="margin: 0;">
+        <div class="logo">
+            <a href="/">
+                <img src="/ggcasino.png" loading="lazy" alt="FF villa">
+            </a>
+            <p>Gamble Garden</p>
+        </div>
+    </section>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <a href="/debriefs">⬅ Back to debriefs</a>
+        <h2>Project 20: Casino deposit improvements</h2>
+        <br/>
+        <div class="debriefs-container is-project">
+            <h3>What made you smile?</h3>
+            <p>
+                Deposit experience became much more smooth
+            </p>
+            <br/>
+            <h3>What did you find confusing?</h3>
+            <ol>
+                <li>
+                    <div class="issue-text">Not being able to copy code walkthrough code sometimes.</div>
+                    <div class="issue-img">
+                        <video src="/debriefs/20/copy.mov" controls preload="none"></video>
+                    </div>
+                </li>
+                <li>
+                    <div class="issue-text">Example app not working out of the box.</div>
+                </li>
+                <li>
+                    <div class="issue-text">Example app needing data replaced in variables at the start, but also in the
+                        code logic itself.
+                    </div>
+                    <img src="/debriefs/20/img_4.png" alt="">
+                </li>
+                <li>
+                    <div class="issue-text">If I attempt to save deposit strategy with missing field, but without custom
+                        amounts being turned on, upon turning them on, they will show validation errors.
+                    </div>
+                    <div class="issue-img">
+                        <img src="/debriefs/20/img.png" alt="Screenshot 1">
+                    </div>
+                </li>
+                <li>
+                    <div class="issue-text">When typing custom amounts, ready to pay is called a lot. Can we call RTP on
+                        blur, if field is valid?
+                    </div>
+                    <div class="issue-img">
+                        <video src="/debriefs/20/ready-to-pay.mov" controls preload="none"></video>
+                    </div>
+                </li>
+                <li>
+                    <div class="issue-text">Address field for payment card gets disabled (google maps issue)</div>
+                    <div class="issue-img">
+                        <video src="/debriefs/20/Screen%20Recording%202024-12-20%20at%2015.23.39.mov" controls
+                               preload="none"></video>
+                    </div>
+                </li>
+                <li>
+                    <div class="issue-text">Not able to modify "Play now" button label and link.</div>
+                </li>
+                <li>
+                    <div class="issue-text">Google Pay could work on click of the method, instead of moving to the next
+                        step.
+                    </div>
+                </li>
+                <li>
+                    <div class="issue-text">If we click to pay with Google Pay, but go back, and use Interac, continue
+                        button is disabled and doesn’t work.
+                    </div>
+                </li>
+                <li>
+                    <div class="issue-text">When we got a decline using a payment card, attempting to use another method
+                        (Interac) resulted in an error. Same issue with Google Pay.
+                    </div>
+                    <img src="/debriefs/20/interac-after-another.png" alt="">
+                    <img src="/debriefs/20/google-pay.png" alt="">
+                    <img src="/debriefs/20/google-pay-2.png" alt="">
+                </li>
+                <li>
+                    <div class="issue-text">When paying with payment card our gateway does not support (AMEX in our
+                        case), we get a very generic message. We should be blocked on step two with error message
+                        stating that card is unsupported.
+                    </div>
+                    <div class="issue-img">
+                        <img src="/debriefs/20/amex.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="issue-text">Not possible to click into detail page for a deposit request. I would expect
+                        this to be doable.
+                    </div>
+                    <div class="issue-img">
+                        <img src="/debriefs/20/img_1.png" alt="Screenshot 2">
+                    </div>
+                </li>
+                <li>
+                    <div class="issue-text">Seems like pending deposit requests do not appear on the timeline.</div>
+                    <div class="issue-img">
+                        <img src="/debriefs/20/img_2.png" alt="Screenshot 3">
+                    </div>
+                    <div class="issue-img">
+                        <img src="/debriefs/20/img_3.png" alt="Screenshot 4">
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+</div>
+
+<footer></footer>
+
+</body>
+
+</html>
