@@ -104,7 +104,10 @@ footer p {
 
 
 /* Debriefs */
+section.intro {
+    padding: 30px;
 
+}
 .debriefs-container {
     display: flex;
     flex-direction: column;
